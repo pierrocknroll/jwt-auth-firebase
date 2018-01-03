@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers\JWT;
+namespace Pierrocknroll\JwtAuthFirebase;
 
 use Firebase\JWT\JWT as FireJWT;
 use Tymon\JWTAuth\Contracts\Providers\JWT;
