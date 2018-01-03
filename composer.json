@@ -1,0 +1,8 @@
+{
+    "name": "pierrocknroll/jwt-auth-firebase",
+    "description": "Replace jose (who is depracated) with firebase provider in jwt-auth",
+    "require": {
+        "firebase/php-jwt": "^5.0",
+        "php": "^7.0"
+    }
+}
