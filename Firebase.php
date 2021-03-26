@@ -19,11 +19,11 @@ class Firebase extends Provider implements JWT
      * @param  array       $keys
      * @param  string|null $driver
      */
-    public function __construct($secret, $algo, array $keys = [], $driver = null)
+    public function __construct($secret = null, $algo = null, array $keys = [], $driver = null)
     {
-        $secret = $this->config('secret');
-        $algo = $this->config('algo');
-        $keys = $this->config('keys');
+        $secret = empty($secret) ? $this->config('secret') : $secret;
+        $algo = empty($algo) ? $this->config('algo') : $algo;
+        $keys = empty($keys) ? $this->config('keys') : $keys;
         parent::__construct($secret, $algo, $keys);
     }
     
