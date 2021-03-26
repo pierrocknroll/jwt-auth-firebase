@@ -21,7 +21,7 @@ class Firebase extends Provider implements JWT
      */
     public function __construct($secret, $algo, array $keys = [], $driver = null)
     {
-        parent::__construct($secret, $keys, $algo);
+        parent::__construct($secret, $algo, $keys);
     }
 
     /**
